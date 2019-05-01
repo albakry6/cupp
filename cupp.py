@@ -323,8 +323,8 @@ def interactive():
     profile["kid"] = input("> Child's name: ").lower()
     profile["kidn"] = input("> Child's nickname: ").lower()
     kidb = input("> Child's birthdate (DDMMYYYY): ")
-    while len(kidb) != 0 and len(kidb) != 8:
-        print("\r\n[-] You must enter 8 digits for birthday!")
+    while len(kidb) != 0 and len(kidb) != 6:
+        print("\r\n[-] You must enter 6 digits for birthday!")
         kidb = input("> Child's birthdate (DDMMYYYY): ")
     profile["kidb"] = str(kidb)
     print("\r\n")
